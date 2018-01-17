@@ -34,6 +34,7 @@ let {
   DCChartLayout: DCChartLayout_js,
   DCLayout: DCLayout_js,
   DCMainLayout: DCMainLayout_js,
+  DCMainLayout2: DCMainLayout2_js,
   DCMainLayoutNoPic: DCMainLayoutNoPic_js,
   DCSubLayout: DCSubLayout_js,
   Layout: Layout_js,
@@ -85,13 +86,10 @@ gulp.task("DCLayout_css", arg => {
 gulp.task("DCMainLayout_css", arg => {
 
   return gulp.src(DCMainLayout_css)
-   .pipe(concat("DCMainLayout_css.css"))
-   .pipe(gulp.dest(cssmin))
    .pipe(minifycss())
-    .pipe(rename(path => {
-     console.log(path);
-     path.basenam += "-min"
-   }))
+   .pipe(concatcss("DCMainLayout_css.css"))
+   .pipe(gulp.dest(cssmin))
+   .pipe(gzip())
    .pipe(gulp.dest(cssmin))
    .pipe(notify({
      message: "DCMainLayout_css处理完成"
@@ -208,9 +206,34 @@ gulp.task("MainLayout2_js", arg => {
      message: "SubLayout2_js处理完成"
    }))
 })
+
+gulp.task("DCMainLayout_js", arg => {
+  return gulp.src(MainLayout_js)
+   .pipe(uglify({"mangle":true}))
+   .pipe(concat("DCMainLayout_js.js"))
+   .pipe(gulp.dest(jsmin))
+   .pipe(gzip())
+   .pipe(gulp.dest(jsmin))
+   .pipe(notify({
+     message: "DCMainLayout_js处理完成"
+   }))
+})
+//部分页面不能压缩更改变量名称，因为页面有引用
+gulp.task("DCMainLayout2_js", arg => {
+  return gulp.src(MainLayout2_js)
+   .pipe(uglify({"mangle":false}))
+   .pipe(concat("DCMainLayout2_js.js"))
+   .pipe(gulp.dest(jsmin))
+   .pipe(gzip())
+   .pipe(gulp.dest(jsmin))
+   .pipe(notify({
+     message: "DCMainLayout_js处理完成"
+   }))
+})
+
 //目前下面路径是经过一个个点击校验了的，老项目一定要谨慎。
-let cssTask = ["MainLayout_css"];
-let jsTask=["MainLayout_js","MainLayout2_js"];
+let cssTask = ["MainLayout_css","DCMainLayout_css"];
+let jsTask=["MainLayout_js","MainLayout2_js","DCMainLayout_js","DCMainLayout2_js"];
 
 gulp.task("default",[...cssTask,...jsTask]);
 /* gulp.task("default", 
