@@ -220,7 +220,7 @@ gulp.task("DCMainLayout_js", arg => {
 })
 //部分页面不能压缩更改变量名称，因为页面有引用
 gulp.task("DCMainLayout2_js", arg => {
-  return gulp.src(MainLayout2_js)
+  return gulp.src(DCMainLayout2_js)
    .pipe(uglify({"mangle":false}))
    .pipe(concat("DCMainLayout2_js.js"))
    .pipe(gulp.dest(jsmin))
