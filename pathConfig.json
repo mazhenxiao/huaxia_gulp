@@ -155,9 +155,9 @@
       "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/ContentDC/Scripts/jquery.validate.extends.js",
       "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/ContentDC/Scripts/Uploadify/jquery.uploadify.js",
       "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/ContentDC/Scripts/iss/iss-tools-screen.js",
-      "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/ContentDC/Scripts/iss/source/iss.js",
       "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/Scripts/Common/Validate-New/jquery.validationEngine-zh_CN.js",
-      "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/Scripts/Common/Validate-New/jquery.validationEngine.js"
+      "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/Scripts/Common/Validate-New/jquery.validationEngine.js",
+      "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/ContentDC/Scripts/iss/source/iss.js"
     ],
     "DCMainLayout2":[
       "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/ContentDC/Scripts/Common.js",
@@ -243,9 +243,9 @@
       "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/Scripts/jquery.validate.js",
       "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/Scripts/jquery.validate.extends.js",
       "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/Scripts/Uploadify/jquery.uploadify.js",
-      "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/Scripts/iss/iss-tools-screen.js",
-      "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/Scripts/iss/source/iss.js",
-      "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/Scripts/knockout-3.2.0.js"
+      "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/ContentDC/Scripts/iss/iss-tools-screen.js",
+      "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/Scripts/knockout-3.2.0.js",
+      "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web/ContentDC/Scripts/iss/source/iss.js"
     ],
     "MainLayout2":[
       "D:/HUAXIA/CFLD.PMS_v2.0/CFLD.PMS.Web//Scripts/Common.js",

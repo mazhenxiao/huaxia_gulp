@@ -209,7 +209,7 @@ gulp.task("MainLayout2_js", arg => {
 
 gulp.task("DCMainLayout_js", arg => {
   return gulp.src(MainLayout_js)
-   .pipe(uglify({"mangle":true}))
+   .pipe(uglify({"mangle":false}))
    .pipe(concat("DCMainLayout_js.js"))
    .pipe(gulp.dest(jsmin))
    .pipe(gzip())
